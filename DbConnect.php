@@ -1,14 +1,11 @@
 <?php
 class DbConnect
 {
+
     private $server = "localhost";
-    private $dbname = "kolonicnygarage2";
-    private $user = "garage2";
-    private $pass = "Garage45*";
-    // private $server = "localhost";
-    // private $dbname = "garage";
-    // private $user = "garage";
-    // private $pass = "Garage45*";
+    private $dbname = "garage";
+    private $user = "";
+    private $pass = "";
     private $options = array(
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,   //vzdy vyvola vyjimku v priprade chyby
         PDO::ATTR_EMULATE_PREPARES => false,       //vynuceni pomoci prepare statement osetreni nebezpecnych znaku
